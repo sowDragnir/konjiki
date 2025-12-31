@@ -1,0 +1,6 @@
+yt-dlp
+moviepy
+librosa
+numpy
+openai-whisper
+schedule
