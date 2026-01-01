@@ -1,4 +1,4 @@
-CHANNELS = ["https://www.youtube.com/@soowbi/videos"]
+CHANNELS = ["https://www.youtube.com/@FaztTech/videos"]
 
 
 MAX_RETRIES = 3
