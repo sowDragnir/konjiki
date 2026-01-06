@@ -24,5 +24,12 @@ def make_short(input_video, output_video):
         w, h = clip.size
         clip = clip.cropped(x_center=w/2, width=h*9/16).resized(height=1080)
         clip.write_videofile(
-            output_video, codec="libx264", audio_codec="aac", fps=30, threads=2, preset="ultrafast"
+            output_video,
+            codec="libx264",
+            audio_codec="aac",
+            fps=30,
+            threads=2,
+            preset="ultrafast",
+            verbose=False,
+            logger=None,
         )

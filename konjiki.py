@@ -1,4 +1,4 @@
-import os, time, schedule
+import os, time, schedule, random
 from config import *
 from jobs.queue import init_db, add_job, mark_done, mark_failed
 from modules.downloader import download
@@ -15,12 +15,16 @@ def job():
     conn = init_db()
     vid = str(int(time.time()))
     add_job(conn, vid)
+
+    # Choisir un channel/URL au hasard dans la liste pour répartir la charge
+    channel = random.choice(CHANNELS) if CHANNELS else None
+
     try:
-        raw = download(CHANNELS[0], vid, RAW_DIR)
+        raw = download(channel, vid, RAW_DIR)
         short = f"{OUT_DIR}/{vid}_short.mp4"
         final = f"{OUT_DIR}/{vid}_final.mp4"
         make_short(raw, short)
-        #add_subtitles(short, final)
+        add_subtitles(short, final)
         upload_all(final)
         mark_done(conn, vid)
         logger.info("JOB OK")
@@ -33,9 +37,3 @@ def job():
 
 job()
     
-
-logger.info("KONJIKI v3 ONLINE")
-while True:
-    logger.info("Checking scheduled jobs...")
-    schedule.run_pending()
-    time.sleep(5)
