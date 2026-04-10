@@ -1,2 +1,4 @@
 .venv/
-config.py
+.env
+youtube_token.json
+instagram_session.json

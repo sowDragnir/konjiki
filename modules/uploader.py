@@ -10,7 +10,7 @@ from instagrapi import Client as IGClient
 from instagrapi.exceptions import LoginRequired, ChallengeRequired
 
 from config import (
-    YOUTUBE_CLIENT_ID, YOUTUBE_CLIENT_SECRET, YOUTUBE_REFRESH_TOKEN,
+    YOUTUBE_TOKEN,
     INSTAGRAM_USER, INSTAGRAM_PASSWORD, INSTAGRAM_SESSION,
 )
 from modules.logger import logger
@@ -18,26 +18,20 @@ from modules.logger import logger
 
 # ─── YouTube ──────────────────────────────────────────────────────────────────
 def _get_youtube_service():
-    """Devuelve un servicio autenticado usando el refresh_token de config.py.
+    """Devuelve un servicio autenticado cargando el token guardado por setup_youtube_auth.py.
 
     No abre navegador. El access token se renueva automáticamente via HTTP
     cuando caduca (cada ~1 hora).
     """
-    if not YOUTUBE_REFRESH_TOKEN:
+    if not os.path.exists(YOUTUBE_TOKEN):
         raise ValueError(
-            "Rellena YOUTUBE_REFRESH_TOKEN en config.py. "
-            "Consíguelo en https://developers.google.com/oauthplayground"
+            f"No se encontró {YOUTUBE_TOKEN}. "
+            "Ejecuta: python setup_youtube_auth.py"
         )
 
-    creds = Credentials(
-        token=None,
-        refresh_token=YOUTUBE_REFRESH_TOKEN,
-        token_uri="https://oauth2.googleapis.com/token",
-        client_id=YOUTUBE_CLIENT_ID,
-        client_secret=YOUTUBE_CLIENT_SECRET,
-    )
-    # Forzar renovación del access token ahora (request HTTP, sin navegador)
-    creds.refresh(google.auth.transport.requests.Request())
+    creds = Credentials.from_authorized_user_file(YOUTUBE_TOKEN)
+    if not creds.valid:
+        creds.refresh(google.auth.transport.requests.Request())
     return build("youtube", "v3", credentials=creds)
 
 
