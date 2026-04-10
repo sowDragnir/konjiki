@@ -1,0 +1,900 @@
+2025-12-31 13:44:15,277 | INFO | KONJIKI v3 ONLINE
+2025-12-31 13:50:30,794 | INFO | KONJIKI v3 ONLINE
+2025-12-31 13:50:50,641 | INFO | KONJIKI v3 ONLINE
+2025-12-31 13:58:37,054 | INFO | KONJIKI v3 ONLINE
+2025-12-31 14:07:46,221 | INFO | KONJIKI v3 ONLINE
+2025-12-31 14:09:05,743 | INFO | KONJIKI v3 ONLINE
+2025-12-31 14:24:22,285 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 19, in job
+    raw = download(CHANNELS[0], vid, RAW_DIR)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/modules/downloader.py", line 15, in download
+    ydl.download([CHANNELS])
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 3662, in download
+    self.__download_wrapper(self.extract_info)(
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 3635, in wrapper
+    res = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1685, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1696, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1852, in __extract_info
+    return self.process_ie_result(ie_result, download, extra_info)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1981, in process_ie_result
+    return self.__process_playlist(ie_result, download)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 2129, in __process_playlist
+    entry_result = self.__process_iterable_entry(entry, download, collections.ChainMap({
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1696, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 2161, in __process_iterable_entry
+    return self.process_ie_result(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1931, in process_ie_result
+    return self.extract_info(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1685, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1696, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1852, in __extract_info
+    return self.process_ie_result(ie_result, download, extra_info)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1911, in process_ie_result
+    ie_result = self.process_video_result(ie_result, download=download)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 3089, in process_video_result
+    self.process_info(new_info)
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 189, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 3494, in process_info
+    self.report_error(f'{msg}. Aborting due to --abort-on-error')
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1154, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1093, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m You have requested merging of multiple formats but ffmpeg is not installed. Aborting due to --abort-on-error
+2025-12-31 14:38:56,657 | INFO | Descargado 1767188287
+2025-12-31 14:40:20,835 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 22, in job
+    make_short(raw, short)
+  File "/home/sow/yokozo/konjiki_v3/modules/editor.py", line 7, in make_short
+    clip = v.subclip(start, min(end, v.duration))
+           ^^^^^^^^^
+AttributeError: 'VideoFileClip' object has no attribute 'subclip'. Did you mean: 'subclipped'?
+2025-12-31 14:46:26,449 | INFO | Descargado 1767188759
+2025-12-31 14:48:18,811 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 22, in job
+    make_short(raw, short)
+  File "/home/sow/yokozo/konjiki_v3/modules/editor.py", line 7, in make_short
+    clip = v.subclip(start, min(end, v.duration))
+           ^^^^^^^^^
+AttributeError: 'VideoFileClip' object has no attribute 'subclip'. Did you mean: 'subclipped'?
+2025-12-31 14:49:56,381 | INFO | KONJIKI v3 ONLINE
+2025-12-31 14:49:56,382 | INFO | Checking scheduled jobs...
+2025-12-31 14:50:01,382 | INFO | Checking scheduled jobs...
+2025-12-31 14:50:06,383 | INFO | Checking scheduled jobs...
+2025-12-31 14:50:11,383 | INFO | Checking scheduled jobs...
+2025-12-31 14:50:16,384 | INFO | Checking scheduled jobs...
+2025-12-31 14:50:24,966 | INFO | Checking scheduled jobs...
+2025-12-31 14:50:29,967 | INFO | Checking scheduled jobs...
+2025-12-31 14:54:48,995 | INFO | Descargado 1767189265
+2025-12-31 14:55:13,617 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 22, in job
+    make_short(raw, short)
+  File "/home/sow/yokozo/konjiki_v3/modules/editor.py", line 7, in make_short
+    clip = v.subclip(start, min(end, v.duration))
+           ^^^^^^^^^
+AttributeError: 'VideoFileClip' object has no attribute 'subclip'. Did you mean: 'subclipped'?
+2025-12-31 14:55:13,626 | INFO | KONJIKI v3 ONLINE
+2025-12-31 14:55:13,626 | INFO | Checking scheduled jobs...
+2025-12-31 14:55:18,626 | INFO | Checking scheduled jobs...
+2025-12-31 14:55:23,627 | INFO | Checking scheduled jobs...
+2025-12-31 14:55:28,628 | INFO | Checking scheduled jobs...
+2025-12-31 14:55:33,629 | INFO | Checking scheduled jobs...
+2025-12-31 14:55:38,630 | INFO | Checking scheduled jobs...
+2025-12-31 14:55:47,203 | INFO | Checking scheduled jobs...
+2025-12-31 14:55:52,203 | INFO | Checking scheduled jobs...
+2025-12-31 14:59:14,817 | INFO | Descargado 1767189542
+2025-12-31 14:59:40,812 | INFO | Detected viral segment: 10.79s - 55.79s
+2025-12-31 15:00:04,968 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 22, in job
+    make_short(raw, short)
+  File "/home/sow/yokozo/konjiki_v3/modules/editor.py", line 23, in make_short
+    clip = v.subclip(start, end)
+           ^^^^^^^^^
+AttributeError: 'VideoFileClip' object has no attribute 'subclip'. Did you mean: 'subclipped'?
+2025-12-31 15:00:04,976 | INFO | KONJIKI v3 ONLINE
+2025-12-31 15:00:04,976 | INFO | Checking scheduled jobs...
+2025-12-31 15:00:09,977 | INFO | Checking scheduled jobs...
+2025-12-31 15:00:14,978 | INFO | Checking scheduled jobs...
+2025-12-31 15:00:19,979 | INFO | Checking scheduled jobs...
+2025-12-31 15:00:24,980 | INFO | Checking scheduled jobs...
+2025-12-31 15:00:33,508 | INFO | Checking scheduled jobs...
+2025-12-31 15:00:38,509 | INFO | Checking scheduled jobs...
+2025-12-31 15:00:43,511 | INFO | Checking scheduled jobs...
+2025-12-31 15:00:48,512 | INFO | Checking scheduled jobs...
+2025-12-31 15:00:53,513 | INFO | Checking scheduled jobs...
+2025-12-31 15:02:02,943 | INFO | Descargado 1767189708
+2025-12-31 15:02:09,828 | ERROR | Error detecting viral segments: got an unexpected keyword argument 'verbose'
+2025-12-31 15:02:39,591 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 22, in job
+    make_short(raw, short)
+  File "/home/sow/yokozo/konjiki_v3/modules/editor.py", line 23, in make_short
+    clip = v.subclip(start, end)
+           ^^^^^^^^^
+AttributeError: 'VideoFileClip' object has no attribute 'subclip'. Did you mean: 'subclipped'?
+2025-12-31 15:02:39,601 | INFO | KONJIKI v3 ONLINE
+2025-12-31 15:02:39,601 | INFO | Checking scheduled jobs...
+2025-12-31 15:02:44,601 | INFO | Checking scheduled jobs...
+2025-12-31 15:02:49,604 | INFO | Checking scheduled jobs...
+2025-12-31 15:02:58,097 | INFO | Checking scheduled jobs...
+2025-12-31 15:04:55,625 | INFO | Descargado 1767189876
+2025-12-31 15:05:08,552 | INFO | Detected viral segment: 10.80s - 55.80s
+2025-12-31 15:05:27,822 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 22, in job
+    make_short(raw, short)
+  File "/home/sow/yokozo/konjiki_v3/modules/editor.py", line 23, in make_short
+    clip = v.subclip(start, end)
+           ^^^^^^^^^
+AttributeError: 'VideoFileClip' object has no attribute 'subclip'. Did you mean: 'subclipped'?
+2025-12-31 15:05:27,829 | INFO | KONJIKI v3 ONLINE
+2025-12-31 15:05:27,829 | INFO | Checking scheduled jobs...
+2025-12-31 15:05:32,830 | INFO | Checking scheduled jobs...
+2025-12-31 15:05:37,830 | INFO | Checking scheduled jobs...
+2025-12-31 15:05:42,831 | INFO | Checking scheduled jobs...
+2025-12-31 15:05:47,831 | INFO | Checking scheduled jobs...
+2025-12-31 15:05:56,408 | INFO | Checking scheduled jobs...
+2025-12-31 15:06:01,408 | INFO | Checking scheduled jobs...
+2025-12-31 15:06:06,409 | INFO | Checking scheduled jobs...
+2025-12-31 15:06:11,410 | INFO | Checking scheduled jobs...
+2025-12-31 15:06:16,411 | INFO | Checking scheduled jobs...
+2025-12-31 15:06:21,412 | INFO | Checking scheduled jobs...
+2025-12-31 15:06:26,412 | INFO | Checking scheduled jobs...
+2025-12-31 15:06:35,004 | INFO | Checking scheduled jobs...
+2025-12-31 15:06:37,381 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1696, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1831, in __extract_info
+    ie_result = ie.extract(url)
+                ^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/extractor/common.py", line 762, in extract
+    ie_result = self._real_extract(url)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/extractor/youtube/_video.py", line 3910, in _real_extract
+    self.raise_no_formats(reason, expected=True)
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/extractor/common.py", line 1274, in raise_no_formats
+    raise ExtractorError(msg, expected=expected, video_id=video_id)
+yt_dlp.utils.ExtractorError: [youtube] XdAaRMhXhDU: Sign in to confirm your age. This video may be inappropriate for some users. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 19, in job
+    raw = download(CHANNELS[0], vid, RAW_DIR)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/modules/downloader.py", line 15, in download
+    ydl.download([CHANNELS])
+    ^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 3662, in download
+    self.__download_wrapper(self.extract_info)(
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 3635, in wrapper
+    res = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1685, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1696, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1852, in __extract_info
+    return self.process_ie_result(ie_result, download, extra_info)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1981, in process_ie_result
+    return self.__process_playlist(ie_result, download)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 2129, in __process_playlist
+    entry_result = self.__process_iterable_entry(entry, download, collections.ChainMap({
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1696, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 2161, in __process_iterable_entry
+    return self.process_ie_result(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1931, in process_ie_result
+    return self.extract_info(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1685, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1714, in wrapper
+    self.report_error(str(e), e.format_traceback())
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1154, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1093, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m [youtube] XdAaRMhXhDU: Sign in to confirm your age. This video may be inappropriate for some users. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2025-12-31 15:06:40,004 | INFO | Checking scheduled jobs...
+2025-12-31 15:06:45,005 | INFO | Checking scheduled jobs...
+2025-12-31 15:06:50,006 | INFO | Checking scheduled jobs...
+2025-12-31 15:06:55,007 | INFO | Checking scheduled jobs...
+2025-12-31 15:07:25,271 | INFO | Descargado 1767190031
+2025-12-31 15:07:34,874 | INFO | Detected viral segment: 10.80s - 55.80s
+2025-12-31 15:07:50,373 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 22, in job
+    make_short(raw, short)
+  File "/home/sow/yokozo/konjiki_v3/modules/editor.py", line 25, in make_short
+    clip = clip.crop(x_center=w/2, width=h*9/16).resize(height=1080)
+           ^^^^^^^^^
+AttributeError: 'VideoFileClip' object has no attribute 'crop'
+2025-12-31 15:07:50,377 | INFO | KONJIKI v3 ONLINE
+2025-12-31 15:07:50,377 | INFO | Checking scheduled jobs...
+2025-12-31 15:07:55,378 | INFO | Checking scheduled jobs...
+2025-12-31 15:08:00,379 | INFO | Checking scheduled jobs...
+2025-12-31 15:08:05,380 | INFO | Checking scheduled jobs...
+2025-12-31 15:08:10,381 | INFO | Checking scheduled jobs...
+2025-12-31 15:08:18,986 | INFO | Checking scheduled jobs...
+2025-12-31 15:08:44,221 | INFO | Descargado 1767190111
+2025-12-31 15:08:57,924 | INFO | Detected viral segment: 10.80s - 55.80s
+2025-12-31 15:09:11,325 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 22, in job
+    make_short(raw, short)
+  File "/home/sow/yokozo/konjiki_v3/modules/editor.py", line 25, in make_short
+    clip = clip.cropped(x_center=w/2, width=h*9/16).resize(height=1080)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'VideoFileClip' object has no attribute 'resize'. Did you mean: 'resized'?
+2025-12-31 15:09:11,331 | INFO | KONJIKI v3 ONLINE
+2025-12-31 15:09:11,332 | INFO | Checking scheduled jobs...
+2025-12-31 15:09:16,332 | INFO | Checking scheduled jobs...
+2025-12-31 15:09:21,333 | INFO | Checking scheduled jobs...
+2025-12-31 15:09:26,334 | INFO | Checking scheduled jobs...
+2025-12-31 15:09:34,919 | INFO | Checking scheduled jobs...
+2025-12-31 15:09:39,920 | INFO | Checking scheduled jobs...
+2025-12-31 15:09:44,920 | INFO | Checking scheduled jobs...
+2025-12-31 15:10:11,739 | INFO | Descargado 1767190195
+2025-12-31 15:10:18,694 | INFO | Detected viral segment: 10.80s - 55.80s
+2025-12-31 15:10:29,129 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 22, in job
+    make_short(raw, short)
+  File "/home/sow/yokozo/konjiki_v3/modules/editor.py", line 26, in make_short
+    clip.write_videofile(
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/decorator.py", line 234, in fun
+    args, kw = fix(args, kw, sig)
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/decorator.py", line 204, in fix
+    ba = sig.bind(*args, **kwargs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3242, in bind
+    return self._bind(args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'verbose'
+2025-12-31 15:10:29,135 | INFO | KONJIKI v3 ONLINE
+2025-12-31 15:10:29,136 | INFO | Checking scheduled jobs...
+2025-12-31 15:10:34,136 | INFO | Checking scheduled jobs...
+2025-12-31 15:10:42,721 | INFO | Checking scheduled jobs...
+2025-12-31 15:10:47,722 | INFO | Checking scheduled jobs...
+2025-12-31 15:10:52,723 | INFO | Checking scheduled jobs...
+2025-12-31 15:10:57,723 | INFO | Checking scheduled jobs...
+2025-12-31 15:11:02,724 | INFO | Checking scheduled jobs...
+2025-12-31 15:11:28,056 | INFO | Descargado 1767190272
+2025-12-31 15:11:37,089 | INFO | Detected viral segment: 10.80s - 55.80s
+2025-12-31 15:11:43,642 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 22, in job
+    make_short(raw, short)
+  File "/home/sow/yokozo/konjiki_v3/modules/editor.py", line 26, in make_short
+    clip.write_videofile(
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/decorator.py", line 234, in fun
+    args, kw = fix(args, kw, sig)
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/decorator.py", line 204, in fix
+    ba = sig.bind(*args, **kwargs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3242, in bind
+    return self._bind(args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'verbosed'
+2025-12-31 15:11:43,656 | INFO | KONJIKI v3 ONLINE
+2025-12-31 15:11:43,656 | INFO | Checking scheduled jobs...
+2025-12-31 15:11:48,657 | INFO | Checking scheduled jobs...
+2025-12-31 15:11:57,239 | INFO | Checking scheduled jobs...
+2025-12-31 15:12:02,240 | INFO | Checking scheduled jobs...
+2025-12-31 15:12:07,240 | INFO | Checking scheduled jobs...
+2025-12-31 15:12:12,241 | INFO | Checking scheduled jobs...
+2025-12-31 15:12:17,243 | INFO | Checking scheduled jobs...
+2025-12-31 15:12:22,243 | INFO | Checking scheduled jobs...
+2025-12-31 15:12:30,832 | INFO | Checking scheduled jobs...
+2025-12-31 15:12:54,820 | INFO | Descargado 1767190361
+2025-12-31 15:13:12,805 | INFO | Detected viral segment: 10.80s - 55.80s
+2025-12-31 15:14:31,618 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 23, in job
+    add_subtitles(short, final)
+  File "/home/sow/yokozo/konjiki_v3/modules/subtitles.py", line 11, in add_subtitles
+    txt = TextClip(
+          ^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/decorator.py", line 234, in fun
+    args, kw = fix(args, kw, sig)
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/decorator.py", line 204, in fix
+    ba = sig.bind(*args, **kwargs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3242, in bind
+    return self._bind(args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/inspect.py", line 3231, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'fontsize'
+2025-12-31 15:14:31,630 | INFO | KONJIKI v3 ONLINE
+2025-12-31 15:14:31,631 | INFO | Checking scheduled jobs...
+2025-12-31 15:14:36,631 | INFO | Checking scheduled jobs...
+2025-12-31 15:15:54,533 | INFO | Descargado 1767190541
+2025-12-31 15:15:58,257 | INFO | Detected viral segment: 10.80s - 55.80s
+2025-12-31 15:16:54,913 | INFO | ====== WebDriver manager ======
+2025-12-31 15:16:55,191 | INFO | Get LATEST chromedriver version for google-chrome
+2025-12-31 15:16:55,365 | INFO | About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+2025-12-31 15:16:55,463 | INFO | Driver downloading response is 200
+2025-12-31 15:16:56,010 | INFO | Get LATEST chromedriver version for google-chrome
+2025-12-31 15:16:56,416 | INFO | Get LATEST chromedriver version for google-chrome
+2025-12-31 15:16:56,736 | INFO | Driver has been saved in cache [/home/sow/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+2025-12-31 15:16:56,751 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 24, in job
+    upload_all(final)
+  File "/home/sow/yokozo/konjiki_v3/modules/uploader.py", line 142, in upload_all
+    driver = get_driver()
+             ^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/modules/uploader.py", line 30, in get_driver
+    return webdriver.Chrome(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/selenium/webdriver/chrome/webdriver.py", line 46, in __init__
+    super().__init__(
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/selenium/webdriver/chromium/webdriver.py", line 56, in __init__
+    self.service.start()
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/selenium/webdriver/common/service.py", line 111, in start
+    self.assert_process_still_running()
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/selenium/webdriver/common/service.py", line 124, in assert_process_still_running
+    raise WebDriverException(f"Service {self._path} unexpectedly exited. Status code was: {return_code}")
+selenium.common.exceptions.WebDriverException: Message: Service /home/sow/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: 127
+
+2025-12-31 15:16:56,759 | INFO | KONJIKI v3 ONLINE
+2025-12-31 15:16:56,759 | INFO | Checking scheduled jobs...
+2025-12-31 15:17:01,759 | INFO | Checking scheduled jobs...
+2026-04-10 12:41:36,642 | INFO | Canal elegido: https://www.youtube.com/@FaztTech/videos
+2026-04-10 12:42:29,848 | INFO | [downloader] Video elegido: Sitio Web con HTML, CSS, Sass, Gulp| Presentación del Curso — https://www.youtube.com/watch?v=yBYLAVrp9K8
+2026-04-10 12:42:53,966 | INFO | [downloader] Intento 1/3: https://www.youtube.com/watch?v=yBYLAVrp9K8
+2026-04-10 12:42:57,996 | ERROR | [yt-dlp] [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+2026-04-10 12:42:57,997 | ERROR | [downloader] Error yt-dlp: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+2026-04-10 12:42:57,997 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 3518, in process_info
+    partial_success, real_download = self.dl(fname, new_info)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 3278, in dl
+    return fd.download(name, new_info, subtitle)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/downloader/common.py", line 480, in download
+    ret = self.real_download(filename, info_dict)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/downloader/http.py", line 362, in real_download
+    establish_connection()
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/downloader/http.py", line 119, in establish_connection
+    ctx.data = self.ydl.urlopen(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 4252, in urlopen
+    return self._request_director.send(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/networking/common.py", line 117, in send
+    response = handler.send(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/networking/_helper.py", line 194, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/networking/common.py", line 359, in send
+    return self._send(request)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/networking/_requests.py", line 361, in _send
+    raise HTTPError(res, redirect_loop=max_redirects_exceeded)
+yt_dlp.networking.exceptions.HTTPError: HTTP Error 403: Forbidden
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 47, in job
+    raw = download(video_url, vid, RAW_DIR, archive_path=DOWNLOAD_ARCHIVE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/modules/downloader.py", line 121, in download
+    raise last_error if last_error else RuntimeError("Fallo en la descarga por razón desconocida")
+  File "/home/sow/yokozo/konjiki_v3/modules/downloader.py", line 101, in download
+    ydl.download([video_url])
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 3662, in download
+    self.__download_wrapper(self.extract_info)(
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 3635, in wrapper
+    res = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1685, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1696, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1852, in __extract_info
+    return self.process_ie_result(ie_result, download, extra_info)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1911, in process_ie_result
+    ie_result = self.process_video_result(ie_result, download=download)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 3089, in process_video_result
+    self.process_info(new_info)
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 189, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 3545, in process_info
+    self.report_error(f'unable to download video data: {err}')
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1154, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1093, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m unable to download video data: HTTP Error 403: Forbidden
+2026-04-10 12:48:52,841 | INFO | Canal elegido: https://www.youtube.com/@filmora_es/videos
+2026-04-10 12:48:59,421 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 12:50:37,775 | INFO | [downloader] Video elegido: Animación con FilmoraPro - Uso Básico de Fotogramas Clave | FilmoraPro Tutorial — https://www.youtube.com/watch?v=lS-VOxqXUcw
+2026-04-10 12:51:02,103 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 12:51:34,289 | INFO | [downloader] Intento 1/3 (player=['web']): https://www.youtube.com/watch?v=lS-VOxqXUcw
+2026-04-10 12:51:38,005 | ERROR | [yt-dlp] [0;31mERROR:[0m [youtube] lS-VOxqXUcw: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 12:51:58,684 | ERROR | [downloader] Error (player=['web']): [0;31mERROR:[0m [youtube] lS-VOxqXUcw: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 12:52:02,088 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1696, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1852, in __extract_info
+    return self.process_ie_result(ie_result, download, extra_info)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1911, in process_ie_result
+    ie_result = self.process_video_result(ie_result, download=download)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 3051, in process_video_result
+    raise ExtractorError(
+yt_dlp.utils.ExtractorError: [youtube] lS-VOxqXUcw: Requested format is not available. Use --list-formats for a list of available formats
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 47, in job
+    raw = download(video_url, vid, RAW_DIR, archive_path=DOWNLOAD_ARCHIVE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/modules/downloader.py", line 164, in download
+    raise last_error if last_error else RuntimeError("Fallo en la descarga por razón desconocida")
+  File "/home/sow/yokozo/konjiki_v3/modules/downloader.py", line 134, in download
+    ydl.download([video_url])
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 3662, in download
+    self.__download_wrapper(self.extract_info)(
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 3635, in wrapper
+    res = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1685, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1714, in wrapper
+    self.report_error(str(e), e.format_traceback())
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1154, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1093, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m [youtube] lS-VOxqXUcw: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 12:55:37,638 | INFO | Canal elegido: https://www.youtube.com/@BubbaDOSpanish/videos
+2026-04-10 12:55:37,638 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 12:55:41,852 | INFO | [downloader] Video elegido: Extremo de Escondidas con Freddy’s Fazbear | Momentos Divertidos Bubba DO Challenge — https://www.youtube.com/watch?v=N4lkuQ-2Dm4
+2026-04-10 12:55:41,852 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 12:55:41,852 | INFO | [downloader] Intento 1/3 (player=['web']): https://www.youtube.com/watch?v=N4lkuQ-2Dm4
+2026-04-10 12:55:43,436 | ERROR | [yt-dlp] [0;31mERROR:[0m [youtube] N4lkuQ-2Dm4: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 12:55:43,437 | ERROR | [downloader] Error (player=['web']): [0;31mERROR:[0m [youtube] N4lkuQ-2Dm4: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 12:55:43,437 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1696, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1852, in __extract_info
+    return self.process_ie_result(ie_result, download, extra_info)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1911, in process_ie_result
+    ie_result = self.process_video_result(ie_result, download=download)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 3051, in process_video_result
+    raise ExtractorError(
+yt_dlp.utils.ExtractorError: [youtube] N4lkuQ-2Dm4: Requested format is not available. Use --list-formats for a list of available formats
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 47, in job
+    raw = download(video_url, vid, RAW_DIR, archive_path=DOWNLOAD_ARCHIVE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/modules/downloader.py", line 164, in download
+    raise last_error if last_error else RuntimeError("Fallo en la descarga por razón desconocida")
+  File "/home/sow/yokozo/konjiki_v3/modules/downloader.py", line 134, in download
+    ydl.download([video_url])
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 3662, in download
+    self.__download_wrapper(self.extract_info)(
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 3635, in wrapper
+    res = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1685, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1714, in wrapper
+    self.report_error(str(e), e.format_traceback())
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1154, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/yt_dlp/YoutubeDL.py", line 1093, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m [youtube] N4lkuQ-2Dm4: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 13:04:22,561 | INFO | Canal elegido: https://www.youtube.com/@Chriskidsshow/videos
+2026-04-10 13:04:22,562 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 13:04:25,800 | INFO | [downloader] Video elegido: Kids and Uncle learn to choose healthy food — https://www.youtube.com/watch?v=WEe2-aeA4gQ
+2026-04-10 13:04:25,800 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 13:04:25,800 | INFO | [downloader] Intento 1/3 (player=['web']): https://www.youtube.com/watch?v=WEe2-aeA4gQ
+2026-04-10 13:04:28,147 | ERROR | [yt-dlp] [0;31mERROR:[0m [youtube] WEe2-aeA4gQ: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 13:04:28,148 | ERROR | [downloader] Error (player=['web']): [0;31mERROR:[0m [youtube] WEe2-aeA4gQ: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 13:04:28,148 | WARNING | [downloader] Fallo (Requested format is not available. Use --list-formats for a list of available formats) con player=['web'], probando siguiente cliente...
+2026-04-10 13:04:28,148 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 13:04:28,149 | INFO | [downloader] Intento 2/3 (player=['ios']): https://www.youtube.com/watch?v=WEe2-aeA4gQ
+2026-04-10 13:04:30,271 | ERROR | [yt-dlp] [0;31mERROR:[0m [youtube] WEe2-aeA4gQ: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 13:04:30,272 | ERROR | [downloader] Error (player=['ios']): [0;31mERROR:[0m [youtube] WEe2-aeA4gQ: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 13:04:30,272 | WARNING | [downloader] Fallo (Requested format is not available. Use --list-formats for a list of available formats) con player=['ios'], probando siguiente cliente...
+2026-04-10 13:04:30,272 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 13:04:30,272 | INFO | [downloader] Intento 3/3 (player=['android']): https://www.youtube.com/watch?v=WEe2-aeA4gQ
+2026-04-10 13:04:52,940 | INFO | [downloader] Descarga OK: 1775819062
+2026-04-10 13:04:53,138 | ERROR | [viral_detector] Error: got an unexpected keyword argument 'verbose'
+2026-04-10 13:04:53,253 | INFO | [editor] Velocidad ajustada x1.05
+2026-04-10 13:04:53,253 | INFO | [editor] Exportando short: 0.0s-45.0s → flip=True, speed=1.05, color=1.03
+2026-04-10 13:06:10,723 | INFO | [subtitles] Subtítulos generados correctamente
+2026-04-10 13:06:10,725 | INFO | ====== WebDriver manager ======
+2026-04-10 13:06:10,922 | INFO | Get LATEST chromedriver version for google-chrome
+2026-04-10 13:06:11,118 | INFO | Get LATEST chromedriver version for google-chrome
+2026-04-10 13:06:11,261 | INFO | Get LATEST chromedriver version for google-chrome
+2026-04-10 13:06:11,552 | INFO | WebDriver version 143.0.7499.192 selected
+2026-04-10 13:06:11,556 | INFO | Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/143.0.7499.192/linux64/chromedriver-linux64.zip
+2026-04-10 13:06:11,556 | INFO | About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/143.0.7499.192/linux64/chromedriver-linux64.zip
+2026-04-10 13:06:11,841 | INFO | Driver downloading response is 200
+2026-04-10 13:06:13,712 | INFO | Get LATEST chromedriver version for google-chrome
+2026-04-10 13:06:13,939 | INFO | Driver has been saved in cache [/home/sow/.wdm/drivers/chromedriver/linux64/143.0.7499.192]
+2026-04-10 13:06:58,338 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 56, in job
+    upload_all(final)
+  File "/home/sow/yokozo/konjiki_v3/modules/uploader.py", line 144, in upload_all
+    upload_youtube_short(driver, video_path, title)
+  File "/home/sow/yokozo/konjiki_v3/modules/uploader.py", line 41, in upload_youtube_short
+    upload_btn = wait.until(
+                 ^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/selenium/webdriver/support/wait.py", line 122, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+#0 0x564ae5f3040a <unknown>
+#1 0x564ae596476b <unknown>
+#2 0x564ae59b5e88 <unknown>
+#3 0x564ae59b60c1 <unknown>
+#4 0x564ae5a042c4 <unknown>
+#5 0x564ae5a01760 <unknown>
+#6 0x564ae59a87b2 <unknown>
+#7 0x564ae59a9461 <unknown>
+#8 0x564ae5ef8df9 <unknown>
+#9 0x564ae5efbd5d <unknown>
+#10 0x564ae5ee1b41 <unknown>
+#11 0x564ae5efc93b <unknown>
+#12 0x564ae5ec8870 <unknown>
+#13 0x564ae5f1d828 <unknown>
+#14 0x564ae5f1d9fc <unknown>
+#15 0x564ae5f2f763 <unknown>
+#16 0x78f77f49caa4 <unknown>
+#17 0x78f77f529c6c <unknown>
+
+2026-04-10 13:09:44,193 | INFO | Canal elegido: https://www.youtube.com/@BubbaDOSpanish/videos
+2026-04-10 13:09:44,193 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 13:09:48,157 | INFO | [downloader] Video elegido: Reto De Cocina Yo vs Abuela | Trucos de Cocina Simples de Bubba DO Challenge — https://www.youtube.com/watch?v=468aMbj-kuI
+2026-04-10 13:09:48,157 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 13:09:48,157 | INFO | [downloader] Intento 1/3 (player=['web']): https://www.youtube.com/watch?v=468aMbj-kuI
+2026-04-10 13:09:49,455 | ERROR | [yt-dlp] [0;31mERROR:[0m [youtube] 468aMbj-kuI: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 13:09:49,456 | ERROR | [downloader] Error (player=['web']): [0;31mERROR:[0m [youtube] 468aMbj-kuI: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 13:09:49,456 | WARNING | [downloader] Fallo (Requested format is not available. Use --list-formats for a list of available formats) con player=['web'], probando siguiente cliente...
+2026-04-10 13:09:49,457 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 13:09:49,457 | INFO | [downloader] Intento 2/3 (player=['ios']): https://www.youtube.com/watch?v=468aMbj-kuI
+2026-04-10 13:09:51,066 | ERROR | [yt-dlp] [0;31mERROR:[0m [youtube] 468aMbj-kuI: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 13:09:51,067 | ERROR | [downloader] Error (player=['ios']): [0;31mERROR:[0m [youtube] 468aMbj-kuI: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 13:09:51,067 | WARNING | [downloader] Fallo (Requested format is not available. Use --list-formats for a list of available formats) con player=['ios'], probando siguiente cliente...
+2026-04-10 13:09:51,067 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 13:09:51,067 | INFO | [downloader] Intento 3/3 (player=['android']): https://www.youtube.com/watch?v=468aMbj-kuI
+2026-04-10 13:11:42,229 | INFO | [downloader] Descarga OK: 1775819384
+2026-04-10 13:11:42,420 | ERROR | [viral_detector] Error: got an unexpected keyword argument 'verbose'
+2026-04-10 13:11:42,681 | INFO | [editor] Velocidad ajustada x1.05
+2026-04-10 13:11:42,682 | INFO | [editor] Exportando short: 0.0s-45.0s → flip=True, speed=1.05, color=1.03
+2026-04-10 13:13:08,715 | INFO | [subtitles] Subtítulos generados correctamente
+2026-04-10 13:13:08,716 | INFO | ====== WebDriver manager ======
+2026-04-10 13:13:08,952 | INFO | Get LATEST chromedriver version for google-chrome
+2026-04-10 13:13:09,088 | INFO | Get LATEST chromedriver version for google-chrome
+2026-04-10 13:13:09,193 | INFO | Driver [/home/sow/.wdm/drivers/chromedriver/linux64/143.0.7499.192/chromedriver-linux64/chromedriver] found in cache
+2026-04-10 13:13:53,730 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 56, in job
+    upload_all(final)
+  File "/home/sow/yokozo/konjiki_v3/modules/uploader.py", line 144, in upload_all
+    upload_youtube_short(driver, video_path, title)
+  File "/home/sow/yokozo/konjiki_v3/modules/uploader.py", line 41, in upload_youtube_short
+    upload_btn = wait.until(
+                 ^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/selenium/webdriver/support/wait.py", line 122, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+#0 0x5bc47f95740a <unknown>
+#1 0x5bc47f38b76b <unknown>
+#2 0x5bc47f3dce88 <unknown>
+#3 0x5bc47f3dd0c1 <unknown>
+#4 0x5bc47f42b2c4 <unknown>
+#5 0x5bc47f428760 <unknown>
+#6 0x5bc47f3cf7b2 <unknown>
+#7 0x5bc47f3d0461 <unknown>
+#8 0x5bc47f91fdf9 <unknown>
+#9 0x5bc47f922d5d <unknown>
+#10 0x5bc47f908b41 <unknown>
+#11 0x5bc47f92393b <unknown>
+#12 0x5bc47f8ef870 <unknown>
+#13 0x5bc47f944828 <unknown>
+#14 0x5bc47f9449fc <unknown>
+#15 0x5bc47f956763 <unknown>
+#16 0x7abb5bc9caa4 <unknown>
+#17 0x7abb5bd29c6c <unknown>
+
+2026-04-10 13:22:35,245 | INFO | Canal elegido: https://www.youtube.com/@BabyBusES/videos
+2026-04-10 13:22:35,246 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 13:22:53,441 | INFO | [downloader] Video elegido: Las Ruedas del Autobús | Recopilación de Canciones Infantiles | BabyBus Español — https://www.youtube.com/watch?v=dyBhOWnwo6g
+2026-04-10 13:22:53,441 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 13:22:53,441 | INFO | [downloader] Intento 1/3 (player=['web']): https://www.youtube.com/watch?v=dyBhOWnwo6g
+2026-04-10 13:22:54,738 | ERROR | [yt-dlp] [0;31mERROR:[0m [youtube] dyBhOWnwo6g: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 13:22:54,739 | ERROR | [downloader] Error (player=['web']): [0;31mERROR:[0m [youtube] dyBhOWnwo6g: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 13:22:54,740 | WARNING | [downloader] Fallo (Requested format is not available. Use --list-formats for a list of available formats) con player=['web'], probando siguiente cliente...
+2026-04-10 13:22:54,740 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 13:22:54,741 | INFO | [downloader] Intento 2/3 (player=['ios']): https://www.youtube.com/watch?v=dyBhOWnwo6g
+2026-04-10 13:22:56,882 | ERROR | [yt-dlp] [0;31mERROR:[0m [youtube] dyBhOWnwo6g: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 13:22:56,884 | ERROR | [downloader] Error (player=['ios']): [0;31mERROR:[0m [youtube] dyBhOWnwo6g: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 13:22:56,884 | WARNING | [downloader] Fallo (Requested format is not available. Use --list-formats for a list of available formats) con player=['ios'], probando siguiente cliente...
+2026-04-10 13:22:56,884 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 13:22:56,884 | INFO | [downloader] Intento 3/3 (player=['android']): https://www.youtube.com/watch?v=dyBhOWnwo6g
+2026-04-10 13:23:24,567 | INFO | [downloader] Descarga OK: 1775820155
+2026-04-10 13:23:24,804 | ERROR | [viral_detector] Error: got an unexpected keyword argument 'verbose'
+2026-04-10 13:23:25,004 | INFO | [editor] Velocidad ajustada x1.05
+2026-04-10 13:23:25,004 | INFO | [editor] Exportando short: 0.0s-45.0s → flip=True, speed=1.05, color=1.03
+2026-04-10 13:24:40,183 | INFO | [subtitles] Subtítulos generados correctamente
+2026-04-10 13:24:48,530 | INFO | [uploader] Iniciando subida a YouTube Shorts...
+2026-04-10 13:25:31,366 | ERROR | [uploader] YouTube Shorts: timeout esperando elemento — Message: 
+Stacktrace:
+#0 0x64b81107340a <unknown>
+#1 0x64b810aa776b <unknown>
+#2 0x64b810af8e88 <unknown>
+#3 0x64b810af90c1 <unknown>
+#4 0x64b810b472c4 <unknown>
+#5 0x64b810b44760 <unknown>
+#6 0x64b810aeb7b2 <unknown>
+#7 0x64b810aec461 <unknown>
+#8 0x64b81103bdf9 <unknown>
+#9 0x64b81103ed5d <unknown>
+#10 0x64b811024b41 <unknown>
+#11 0x64b81103f93b <unknown>
+#12 0x64b81100b870 <unknown>
+#13 0x64b811060828 <unknown>
+#14 0x64b8110609fc <unknown>
+#15 0x64b811072763 <unknown>
+#16 0x759e7909caa4 <unknown>
+#17 0x759e79129c6c <unknown>
+
+2026-04-10 13:25:31,366 | INFO | [uploader] Iniciando subida a Instagram Reels...
+2026-04-10 13:26:13,452 | ERROR | [uploader] Instagram Reels: timeout esperando elemento — Message: 
+Stacktrace:
+#0 0x64b81107340a <unknown>
+#1 0x64b810aa776b <unknown>
+#2 0x64b810af8e88 <unknown>
+#3 0x64b810af90c1 <unknown>
+#4 0x64b810b472c4 <unknown>
+#5 0x64b810b44760 <unknown>
+#6 0x64b810aeb7b2 <unknown>
+#7 0x64b810aec461 <unknown>
+#8 0x64b81103bdf9 <unknown>
+#9 0x64b81103ed5d <unknown>
+#10 0x64b811024b41 <unknown>
+#11 0x64b81103f93b <unknown>
+#12 0x64b81100b870 <unknown>
+#13 0x64b811060828 <unknown>
+#14 0x64b8110609fc <unknown>
+#15 0x64b811072763 <unknown>
+#16 0x759e7909caa4 <unknown>
+#17 0x759e79129c6c <unknown>
+
+2026-04-10 13:26:13,642 | WARNING | [uploader] Subidas fallidas: youtube, instagram
+2026-04-10 13:26:13,642 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 56, in job
+    upload_all(final)
+  File "/home/sow/yokozo/konjiki_v3/modules/uploader.py", line 159, in upload_all
+    raise RuntimeError(f"Todas las subidas fallaron: {', '.join(err)}")
+RuntimeError: Todas las subidas fallaron: youtube, instagram
+2026-04-10 13:32:02,807 | INFO | Canal elegido: https://www.youtube.com/@BabyBusES/videos
+2026-04-10 13:32:02,807 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 13:32:26,182 | INFO | [downloader] Video elegido: Vamos a Jugar en el Parque | Canciones Infantiles | BabyBus Español — https://www.youtube.com/watch?v=eSMZhRaYkIA
+2026-04-10 13:32:26,183 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 13:32:26,183 | INFO | [downloader] Intento 1/3 (player=['web']): https://www.youtube.com/watch?v=eSMZhRaYkIA
+2026-04-10 13:32:27,337 | ERROR | [yt-dlp] [0;31mERROR:[0m [youtube] eSMZhRaYkIA: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 13:32:27,339 | ERROR | [downloader] Error (player=['web']): [0;31mERROR:[0m [youtube] eSMZhRaYkIA: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 13:32:27,339 | WARNING | [downloader] Fallo (Requested format is not available. Use --list-formats for a list of available formats) con player=['web'], probando siguiente cliente...
+2026-04-10 13:32:27,339 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 13:32:27,339 | INFO | [downloader] Intento 2/3 (player=['ios']): https://www.youtube.com/watch?v=eSMZhRaYkIA
+2026-04-10 13:32:28,853 | ERROR | [yt-dlp] [0;31mERROR:[0m [youtube] eSMZhRaYkIA: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 13:32:28,854 | ERROR | [downloader] Error (player=['ios']): [0;31mERROR:[0m [youtube] eSMZhRaYkIA: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 13:32:28,854 | WARNING | [downloader] Fallo (Requested format is not available. Use --list-formats for a list of available formats) con player=['ios'], probando siguiente cliente...
+2026-04-10 13:32:28,854 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 13:32:28,855 | INFO | [downloader] Intento 3/3 (player=['android']): https://www.youtube.com/watch?v=eSMZhRaYkIA
+2026-04-10 13:32:37,406 | INFO | [downloader] Descarga OK: 1775820722
+2026-04-10 13:32:37,539 | ERROR | [viral_detector] Error: got an unexpected keyword argument 'verbose'
+2026-04-10 13:32:37,653 | INFO | [editor] Velocidad ajustada x1.05
+2026-04-10 13:32:37,653 | INFO | [editor] Exportando short: 0.0s-45.0s → flip=True, speed=1.05, color=1.03
+2026-04-10 13:33:49,705 | INFO | [subtitles] Subtítulos generados correctamente
+2026-04-10 13:33:51,265 | INFO | patching driver executable /home/sow/.local/share/undetected_chromedriver/undetected_chromedriver
+2026-04-10 13:33:51,677 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 56, in job
+    upload_all(final)
+  File "/home/sow/yokozo/konjiki_v3/modules/uploader.py", line 135, in upload_all
+    driver = get_driver()
+             ^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/modules/uploader.py", line 36, in get_driver
+    driver = uc.Chrome(options=options, headless=_HEADLESS, use_subprocess=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/selenium/webdriver/chrome/webdriver.py", line 46, in __init__
+    super().__init__(
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/selenium/webdriver/chromium/webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "/home/sow/yokozo/konjiki_v3/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:45713
+from session not created: This version of ChromeDriver only supports Chrome version 147
+Current browser version is 143.0.7499.192; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x62e3fa8c1b6a <unknown>
+#1 0x62e3fa2c3265 <unknown>
+#2 0x62e3fa30670f <unknown>
+#3 0x62e3fa3054d0 <unknown>
+#4 0x62e3fa2fa491 <unknown>
+#5 0x62e3fa34af9e <unknown>
+#6 0x62e3fa34a68c <unknown>
+#7 0x62e3fa3095cf <unknown>
+#8 0x62e3fa30a391 <unknown>
+#9 0x62e3fa88704b <unknown>
+#10 0x62e3fa88a00d <unknown>
+#11 0x62e3fa873808 <unknown>
+#12 0x62e3fa88aba0 <unknown>
+#13 0x62e3fa85a280 <unknown>
+#14 0x62e3fa8aedb8 <unknown>
+#15 0x62e3fa8aef88 <unknown>
+#16 0x62e3fa8c05de <unknown>
+#17 0x794577e9caa4 <unknown>
+#18 0x794577f29c6c <unknown>
+
+2026-04-10 13:33:51,698 | INFO | ensuring close
+2026-04-10 13:38:39,224 | INFO | Canal elegido: https://www.youtube.com/@BabyBusES/videos
+2026-04-10 13:38:39,224 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 13:38:59,372 | INFO | [downloader] Video elegido: 🔍Sheriff Labrador - ¿Qué Se Esconde detrás de Nosotros? | EP 30 | Videos de Niños | BabyBus Español — https://www.youtube.com/watch?v=46a2gvo2TbE
+2026-04-10 13:38:59,372 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 13:38:59,372 | INFO | [downloader] Intento 1/3 (player=['web']): https://www.youtube.com/watch?v=46a2gvo2TbE
+2026-04-10 13:39:00,835 | ERROR | [yt-dlp] [0;31mERROR:[0m [youtube] 46a2gvo2TbE: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 13:39:00,836 | ERROR | [downloader] Error (player=['web']): [0;31mERROR:[0m [youtube] 46a2gvo2TbE: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 13:39:00,836 | WARNING | [downloader] Fallo (Requested format is not available. Use --list-formats for a list of available formats) con player=['web'], probando siguiente cliente...
+2026-04-10 13:39:00,836 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 13:39:00,837 | INFO | [downloader] Intento 2/3 (player=['ios']): https://www.youtube.com/watch?v=46a2gvo2TbE
+2026-04-10 13:39:02,028 | ERROR | [yt-dlp] [0;31mERROR:[0m [youtube] 46a2gvo2TbE: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 13:39:02,029 | ERROR | [downloader] Error (player=['ios']): [0;31mERROR:[0m [youtube] 46a2gvo2TbE: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 13:39:02,029 | WARNING | [downloader] Fallo (Requested format is not available. Use --list-formats for a list of available formats) con player=['ios'], probando siguiente cliente...
+2026-04-10 13:39:02,029 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 13:39:02,029 | INFO | [downloader] Intento 3/3 (player=['android']): https://www.youtube.com/watch?v=46a2gvo2TbE
+2026-04-10 13:39:07,576 | INFO | [downloader] Descarga OK: 1775821119
+2026-04-10 13:39:13,618 | INFO | [viral_detector] Segmento detectado: 262.92s — 307.92s (score=0.775)
+2026-04-10 13:39:13,815 | INFO | [editor] Velocidad ajustada x1.05
+2026-04-10 13:39:13,815 | INFO | [editor] Exportando short: 262.9s-307.9s → flip=True, speed=1.05, color=1.03
+2026-04-10 13:40:32,267 | INFO | [subtitles] Subtítulos generados correctamente
+2026-04-10 13:40:38,224 | INFO | patching driver executable /home/sow/.local/share/undetected_chromedriver/undetected_chromedriver
+2026-04-10 13:40:39,266 | INFO | [uploader] YouTube Shorts: iniciando...
+2026-04-10 13:42:20,198 | ERROR | [uploader] YouTube Shorts: timeout — 
+2026-04-10 13:42:20,198 | INFO | [uploader] Instagram Reels: iniciando...
+2026-04-10 13:42:51,202 | INFO | ensuring close
+2026-04-10 14:33:54,475 | INFO | Canal elegido: https://www.youtube.com/@BabyBusES/videos
+2026-04-10 14:33:54,476 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 14:34:16,990 | INFO | [downloader] Video elegido: We are going to open the Surprise Eggs | Children's Songs | BabyBus — https://www.youtube.com/watch?v=XqqvIFeKuI8
+2026-04-10 14:34:16,990 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 14:34:16,990 | INFO | [downloader] Intento 1/3 (player=['web']): https://www.youtube.com/watch?v=XqqvIFeKuI8
+2026-04-10 14:34:18,716 | ERROR | [yt-dlp] [0;31mERROR:[0m [youtube] XqqvIFeKuI8: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 14:34:18,717 | ERROR | [downloader] Error (player=['web']): [0;31mERROR:[0m [youtube] XqqvIFeKuI8: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 14:34:18,717 | WARNING | [downloader] Fallo (Requested format is not available. Use --list-formats for a list of available formats) con player=['web'], probando siguiente cliente...
+2026-04-10 14:34:18,717 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 14:34:18,718 | INFO | [downloader] Intento 2/3 (player=['ios']): https://www.youtube.com/watch?v=XqqvIFeKuI8
+2026-04-10 14:34:19,883 | ERROR | [yt-dlp] [0;31mERROR:[0m [youtube] XqqvIFeKuI8: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 14:34:19,884 | ERROR | [downloader] Error (player=['ios']): [0;31mERROR:[0m [youtube] XqqvIFeKuI8: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 14:34:19,884 | WARNING | [downloader] Fallo (Requested format is not available. Use --list-formats for a list of available formats) con player=['ios'], probando siguiente cliente...
+2026-04-10 14:34:19,884 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 14:34:19,884 | INFO | [downloader] Intento 3/3 (player=['android']): https://www.youtube.com/watch?v=XqqvIFeKuI8
+2026-04-10 14:34:28,540 | INFO | [downloader] Descarga OK: 1775824434
+2026-04-10 14:34:47,469 | INFO | [viral_detector] Segmento detectado: 682.50s — 727.50s (score=0.881)
+2026-04-10 14:34:47,688 | INFO | [editor] Velocidad ajustada x1.05
+2026-04-10 14:34:47,689 | INFO | [editor] Exportando short: 682.5s-727.5s → flip=True, speed=1.05, color=1.03
+2026-04-10 14:36:19,568 | INFO | [subtitles] Subtítulos generados correctamente
+2026-04-10 14:36:19,568 | INFO | [uploader] YouTube: iniciando subida via API...
+2026-04-10 14:36:20,342 | INFO | Please visit this URL to authorize this application: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=864201356996-8tulpbkn201m0g0cg4cj3j5i2ihr3anj.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A34891%2F&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube.upload&state=0ZOQDIhIOpeyTxaqzdKDoLR6OcLLAD&code_challenge=WS9X-EjAdooSnHU-28GcG4xcjE5WuUvFH8ukPsvo16Q&code_challenge_method=S256&access_type=offline
+2026-04-10 15:10:27,251 | INFO | Canal elegido: https://www.youtube.com/@BabyBusES/videos
+2026-04-10 15:10:27,252 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 15:10:49,665 | INFO | [downloader] Video elegido: Me Gusta Mi Familia | Canción Infantil | La Falimia Canción | BabyBus Español — https://www.youtube.com/watch?v=uMAczJtUw7Y
+2026-04-10 15:10:49,666 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 15:10:49,666 | INFO | [downloader] Intento 1/3 (player=['web']): https://www.youtube.com/watch?v=uMAczJtUw7Y
+2026-04-10 15:10:51,096 | ERROR | [yt-dlp] [0;31mERROR:[0m [youtube] uMAczJtUw7Y: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 15:10:51,097 | ERROR | [downloader] Error (player=['web']): [0;31mERROR:[0m [youtube] uMAczJtUw7Y: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 15:10:51,097 | WARNING | [downloader] Fallo (Requested format is not available. Use --list-formats for a list of available formats) con player=['web'], probando siguiente cliente...
+2026-04-10 15:10:51,097 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 15:10:51,097 | INFO | [downloader] Intento 2/3 (player=['ios']): https://www.youtube.com/watch?v=uMAczJtUw7Y
+2026-04-10 15:10:52,154 | ERROR | [yt-dlp] [0;31mERROR:[0m [youtube] uMAczJtUw7Y: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 15:10:52,155 | ERROR | [downloader] Error (player=['ios']): [0;31mERROR:[0m [youtube] uMAczJtUw7Y: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-10 15:10:52,155 | WARNING | [downloader] Fallo (Requested format is not available. Use --list-formats for a list of available formats) con player=['ios'], probando siguiente cliente...
+2026-04-10 15:10:52,155 | INFO | [downloader] Usando cookies del navegador: chrome
+2026-04-10 15:10:52,155 | INFO | [downloader] Intento 3/3 (player=['android']): https://www.youtube.com/watch?v=uMAczJtUw7Y
+2026-04-10 15:11:04,381 | INFO | [downloader] Descarga OK: 1775826627
+2026-04-10 15:11:07,209 | INFO | [viral_detector] Segmento detectado: 74.70s — 119.70s (score=0.794)
+2026-04-10 15:11:07,390 | INFO | [editor] Velocidad ajustada x1.05
+2026-04-10 15:11:07,391 | INFO | [editor] Exportando short: 74.7s-119.7s → flip=True, speed=1.05, color=1.03
+2026-04-10 15:13:08,629 | INFO | [subtitles] Subtítulos generados correctamente
+2026-04-10 15:13:08,632 | INFO | [uploader] YouTube: iniciando subida via API...
+2026-04-10 15:13:08,632 | ERROR | [uploader] YouTube: error — Rellena YOUTUBE_REFRESH_TOKEN en config.py. Consíguelo en https://developers.google.com/oauthplayground
+2026-04-10 15:13:08,632 | INFO | [uploader] Instagram: iniciando subida...
+2026-04-10 15:13:08,633 | ERROR | [uploader] Instagram: error — Configura INSTAGRAM_USER e INSTAGRAM_PASSWORD en config.py
+2026-04-10 15:13:08,633 | WARNING | [uploader] Fallidos: youtube, instagram
+2026-04-10 15:13:08,633 | ERROR | JOB ERROR
+Traceback (most recent call last):
+  File "/home/sow/yokozo/konjiki_v3/konjiki.py", line 56, in job
+    upload_all(final)
+  File "/home/sow/yokozo/konjiki_v3/modules/uploader.py", line 163, in upload_all
+    raise RuntimeError(f"Todas las subidas fallaron: {', '.join(err)}")
+RuntimeError: Todas las subidas fallaron: youtube, instagram
