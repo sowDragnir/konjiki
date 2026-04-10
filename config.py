@@ -28,9 +28,6 @@ COOKIES_BROWSER = "chrome"
 # 4. Copia el Client ID y Client Secret aquí abajo
 # 5. Ejecuta: python setup_youtube_auth.py  (una sola vez)
 #    → abre el navegador para aprobar, luego guarda youtube_token.json
-YOUTUBE_CLIENT_ID     = ""
-YOUTUBE_CLIENT_SECRET = ""
-# Obtén el refresh token en https://developers.google.com/oauthplayground
 # → engranaje → "Use your own OAuth credentials" → scope: youtube.upload
 # → Authorize → Exchange code for tokens → copia refresh_token
 YOUTUBE_REFRESH_TOKEN = ""   # pega aquí el refresh_token
