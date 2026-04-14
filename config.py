@@ -36,9 +36,17 @@ INSTAGRAM_PASSWORD    = os.getenv("INSTAGRAM_PASSWORD", "")
 
 # ─── Anti-copyright ───────────────────────────────────────────────────────────
 # Transformaciones que se aplican al clip antes de exportar.
-FLIP_HORIZONTAL = True    # Espejo horizontal
-SPEED_FACTOR    = 1.05    # 1.0 = sin cambio, 1.05 = 5% más rápido
-COLOR_FACTOR    = 1.03    # 1.0 = sin cambio, 1.03 = brillo/saturación +3%
+FLIP_HORIZONTAL        = True    # Espejo horizontal (reversible)
+SPEED_FACTOR           = 1.08    # 1.0 = sin cambio, 1.08 = 8% más rápido (más agresivo)
+COLOR_FACTOR           = 1.08    # 1.0 = sin cambio, 1.08 = brillo/saturación +8%
+BRIGHTNESS_FACTOR      = 1.05    # Ajuste de brillo adicional (1.0 = sin cambio)
+CONTRAST_FACTOR        = 1.06    # Ajuste de contraste (1.0 = sin cambio)
+SATURATION_FACTOR      = 0.95    # Saturación (1.0 = original, <1 = desaturado, >1 = más saturado)
+ROTATION_DEGREES       = 0.5     # Rotación ligera del video en grados (0 = desactivado)
+ZOOM_FACTOR            = 1.02    # Zoom ligero (1.0 = sin cambio, 1.02 = +2%)
+GAUSSIAN_NOISE_LEVEL   = 0.8     # Ruido Gaussiano (0 = desactivado, rango 0-2)
+AUDIO_PITCH_SEMITONES  = 2.5     # Semitones a subir el tono (0 = desactivado, más agresivo)
+AUDIO_SPEED_FACTOR     = 1.06    # Velocidad del audio independiente (1.0 = sin cambio)
 
 # ─── Rutas ────────────────────────────────────────────────────────────────────
 RAW_DIR           = "downloads"

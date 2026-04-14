@@ -32,9 +32,10 @@ client_config = {
     }
 }
 
-print("Abriendo navegador para autorizar acceso a YouTube...")
 flow = InstalledAppFlow.from_client_config(client_config, SCOPES)
-creds = flow.run_local_server(port=0)
+# open_browser=False es necesario en WSL — abre la URL manualmente en Windows
+creds = flow.run_local_server(port=5050, open_browser=False)
+print("Abre esta URL en tu navegador de Windows para autorizar el acceso.")
 
 with open(YOUTUBE_TOKEN, "w") as f:
     f.write(creds.to_json())

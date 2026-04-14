@@ -3,6 +3,7 @@ yt-dlp
 moviepy>=2.0
 librosa
 numpy
+opencv-python
 openai-whisper
 schedule
 google-api-python-client
